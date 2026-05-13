@@ -35,6 +35,7 @@ public class HabitacioAmbPortaTancada extends Habitacio {
             System.out.println("Et trobes davant una porta tancada més gran que en ratatui, veig que no posseeixes l'objecta necessari per prosseguir la teva aventura, toca el dos");
             return super.getSortida(direccio);
         }else {
+
             return super.getSortida(direccio);
         }
     }

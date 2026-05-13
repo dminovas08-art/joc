@@ -39,13 +39,16 @@ public class Jugador {
         return null;
     }
 
-    public boolean getItemInventari(String nomItem){
-        for(Item i: inventari){
-            if(i.getNom().equals(nomItem)){
-                return true;
-            }
+    public void utilitzarItem(String nomItem) {
+
+        Item item = buscarItem(nomItem);
+
+        if (item == null) {
+            System.out.println("No tens aquest objecte.");
+            return;
         }
-        return false;
+
+        posicioActual.utilitzarItem(item);
     }
     public void moureA(Direccio direccio) {
         Habitacio seguent = posicioActual.getSortida(direccio);
