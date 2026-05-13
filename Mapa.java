@@ -22,7 +22,7 @@ public class Mapa {
         );
         HabitacioFosca fosca = new HabitacioFosca(
                 "Fosca",
-                "Tinc po."
+                "Una habitació il·luminada per una llanterna, la qual cosa només et permet veure un objecte insignificant."
         );
         Habitacio oculta = new Habitacio(
                 "Oculta",
